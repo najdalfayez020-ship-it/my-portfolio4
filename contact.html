@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple">
+    <script src="https://kit.fontawesome.com/a54d2cbf95.js"></script>
+  <title>Contact | Najd Alfayez</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f9f9f9;
+      color: #333;
+      font-size: medium;
+    }
+
+    header {
+      background-color: #5f6869;
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    header p {
+      margin-top: 8px;
+      font-size: 1.2rem;
+      color: #e0dddd;
+    }
+
+    .contact-container {
+      max-width: 700px;
+      margin: 50px auto;
+      padding: 30px;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    }
+
+    .contact-container h2 {
+      text-align: center;
+      color: #5f6869;
+      margin-bottom: 25px;
+    }
+
+    .contact-container label {
+      display: block;
+      margin: 12px 0 6px;
+      font-weight: bold;
+      color: #5f6869;
+    }
+
+    .contact-container input,
+    .contact-container textarea {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ad9f9f;
+      border-radius: 6px;
+      outline: none;
+      font-size: 1rem;
+      margin-bottom: 15px;
+    }
+
+    .contact-container input:focus,
+    .contact-container textarea:focus {
+      border-color: #5f6869;
+    }
+
+    .contact-container button {
+      width: 100%;
+      padding: 14px;
+      background-color: #5f6869;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 1.1rem;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .contact-container button:hover {
+      background-color: #ad9f9f;
+    }
+
+    footer {
+      text-align: center;
+      background-color: #5f6869;
+      color: white;
+      padding: 15px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav class="menu">
+            <img src="logo.png" alt="logo" class="footer-logo">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Our team</a></li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn" onclick="toggleDropdown()">Contact us</a>
+                    <div class="dropdown-content" id="myDropdown">
+                        <a href="contact.html">Contact</a>
+                        <a href="FAQ.html">FAQ</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <br>
+        <br>
+    <h1>Najd Alfayez</h1>
+    <p>Contact Me</p>
+  </header>
+
+  <div class="contact-container">
+    <h2>Get in Touch</h2>
+    <form action="#" method="post">
+      <label for="name">Your Name</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+      <label for="email">Your Email</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+      <label for="message">Your Message</label>
+      <textarea id="message" name="message" rows="5" placeholder="Write your message..." required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+
+  <footer>
+    <p>© <span id="year"></span> Najd Alfayez. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Auto-update year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+  <a href="#" class="to-top">
+        <i class="fas fa-chevron-up"></i>
+    </a>
+
+    <script src="main.js"></script>
+</body>
+</html>
